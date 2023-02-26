@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E2FCAE0629AB585F0020CC2A /* WonderLandApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAE0529AB585F0020CC2A /* WonderLandApp.swift */; };
+		E2FCAE0829AB585F0020CC2A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAE0729AB585F0020CC2A /* ContentView.swift */; };
+		E2FCAE0A29AB585F0020CC2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2FCAE0929AB585F0020CC2A /* Assets.xcassets */; };
+		E2FCAE0D29AB585F0020CC2A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2FCAE0C29AB585F0020CC2A /* Preview Assets.xcassets */; };
+		E2FCAE0F29AB585F0020CC2A /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAE0E29AB585F0020CC2A /* Persistence.swift */; };
+		E2FCAE1229AB585F0020CC2A /* WonderLand.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAE1029AB585F0020CC2A /* WonderLand.xcdatamodeld */; };
+		E2FCAE1C29AB585F0020CC2A /* WonderLandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAE1B29AB585F0020CC2A /* WonderLandTests.swift */; };
+		E2FCAE2629AB585F0020CC2A /* WonderLandUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAE2529AB585F0020CC2A /* WonderLandUITests.swift */; };
+		E2FCAE2829AB585F0020CC2A /* WonderLandUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAE2729AB585F0020CC2A /* WonderLandUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E2FCAE1829AB585F0020CC2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2FCADFA29AB585F0020CC2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2FCAE0129AB585F0020CC2A;
+			remoteInfo = WonderLand;
+		};
+		E2FCAE2229AB585F0020CC2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2FCADFA29AB585F0020CC2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2FCAE0129AB585F0020CC2A;
+			remoteInfo = WonderLand;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E2FCAE0229AB585F0020CC2A /* WonderLand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WonderLand.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2FCAE0529AB585F0020CC2A /* WonderLandApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WonderLandApp.swift; sourceTree = "<group>"; };
+		E2FCAE0729AB585F0020CC2A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E2FCAE0929AB585F0020CC2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E2FCAE0C29AB585F0020CC2A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E2FCAE0E29AB585F0020CC2A /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		E2FCAE1129AB585F0020CC2A /* WonderLand.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WonderLand.xcdatamodel; sourceTree = "<group>"; };
+		E2FCAE1729AB585F0020CC2A /* WonderLandTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WonderLandTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2FCAE1B29AB585F0020CC2A /* WonderLandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WonderLandTests.swift; sourceTree = "<group>"; };
+		E2FCAE2129AB585F0020CC2A /* WonderLandUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WonderLandUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2FCAE2529AB585F0020CC2A /* WonderLandUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WonderLandUITests.swift; sourceTree = "<group>"; };
+		E2FCAE2729AB585F0020CC2A /* WonderLandUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WonderLandUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2FCADFF29AB585F0020CC2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2FCAE1429AB585F0020CC2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2FCAE1E29AB585F0020CC2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E2FCADF929AB585F0020CC2A = {
+			isa = PBXGroup;
+			children = (
+				E2FCAE0429AB585F0020CC2A /* WonderLand */,
+				E2FCAE1A29AB585F0020CC2A /* WonderLandTests */,
+				E2FCAE2429AB585F0020CC2A /* WonderLandUITests */,
+				E2FCAE0329AB585F0020CC2A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E2FCAE0329AB585F0020CC2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2FCAE0229AB585F0020CC2A /* WonderLand.app */,
+				E2FCAE1729AB585F0020CC2A /* WonderLandTests.xctest */,
+				E2FCAE2129AB585F0020CC2A /* WonderLandUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2FCAE0429AB585F0020CC2A /* WonderLand */ = {
+			isa = PBXGroup;
+			children = (
+				E2FCAE0529AB585F0020CC2A /* WonderLandApp.swift */,
+				E2FCAE0729AB585F0020CC2A /* ContentView.swift */,
+				E2FCAE0929AB585F0020CC2A /* Assets.xcassets */,
+				E2FCAE0E29AB585F0020CC2A /* Persistence.swift */,
+				E2FCAE1029AB585F0020CC2A /* WonderLand.xcdatamodeld */,
+				E2FCAE0B29AB585F0020CC2A /* Preview Content */,
+			);
+			path = WonderLand;
+			sourceTree = "<group>";
+		};
+		E2FCAE0B29AB585F0020CC2A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E2FCAE0C29AB585F0020CC2A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E2FCAE1A29AB585F0020CC2A /* WonderLandTests */ = {
+			isa = PBXGroup;
+			children = (
+				E2FCAE1B29AB585F0020CC2A /* WonderLandTests.swift */,
+			);
+			path = WonderLandTests;
+			sourceTree = "<group>";
+		};
+		E2FCAE2429AB585F0020CC2A /* WonderLandUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E2FCAE2529AB585F0020CC2A /* WonderLandUITests.swift */,
+				E2FCAE2729AB585F0020CC2A /* WonderLandUITestsLaunchTests.swift */,
+			);
+			path = WonderLandUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E2FCAE0129AB585F0020CC2A /* WonderLand */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2FCAE2B29AB585F0020CC2A /* Build configuration list for PBXNativeTarget "WonderLand" */;
+			buildPhases = (
+				E2FCADFE29AB585F0020CC2A /* Sources */,
+				E2FCADFF29AB585F0020CC2A /* Frameworks */,
+				E2FCAE0029AB585F0020CC2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WonderLand;
+			productName = WonderLand;
+			productReference = E2FCAE0229AB585F0020CC2A /* WonderLand.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E2FCAE1629AB585F0020CC2A /* WonderLandTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2FCAE2E29AB585F0020CC2A /* Build configuration list for PBXNativeTarget "WonderLandTests" */;
+			buildPhases = (
+				E2FCAE1329AB585F0020CC2A /* Sources */,
+				E2FCAE1429AB585F0020CC2A /* Frameworks */,
+				E2FCAE1529AB585F0020CC2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2FCAE1929AB585F0020CC2A /* PBXTargetDependency */,
+			);
+			name = WonderLandTests;
+			productName = WonderLandTests;
+			productReference = E2FCAE1729AB585F0020CC2A /* WonderLandTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E2FCAE2029AB585F0020CC2A /* WonderLandUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2FCAE3129AB585F0020CC2A /* Build configuration list for PBXNativeTarget "WonderLandUITests" */;
+			buildPhases = (
+				E2FCAE1D29AB585F0020CC2A /* Sources */,
+				E2FCAE1E29AB585F0020CC2A /* Frameworks */,
+				E2FCAE1F29AB585F0020CC2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2FCAE2329AB585F0020CC2A /* PBXTargetDependency */,
+			);
+			name = WonderLandUITests;
+			productName = WonderLandUITests;
+			productReference = E2FCAE2129AB585F0020CC2A /* WonderLandUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2FCADFA29AB585F0020CC2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					E2FCAE0129AB585F0020CC2A = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					E2FCAE1629AB585F0020CC2A = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = E2FCAE0129AB585F0020CC2A;
+					};
+					E2FCAE2029AB585F0020CC2A = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = E2FCAE0129AB585F0020CC2A;
+					};
+				};
+			};
+			buildConfigurationList = E2FCADFD29AB585F0020CC2A /* Build configuration list for PBXProject "WonderLand" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E2FCADF929AB585F0020CC2A;
+			productRefGroup = E2FCAE0329AB585F0020CC2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2FCAE0129AB585F0020CC2A /* WonderLand */,
+				E2FCAE1629AB585F0020CC2A /* WonderLandTests */,
+				E2FCAE2029AB585F0020CC2A /* WonderLandUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E2FCAE0029AB585F0020CC2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2FCAE0D29AB585F0020CC2A /* Preview Assets.xcassets in Resources */,
+				E2FCAE0A29AB585F0020CC2A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2FCAE1529AB585F0020CC2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2FCAE1F29AB585F0020CC2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E2FCADFE29AB585F0020CC2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2FCAE0F29AB585F0020CC2A /* Persistence.swift in Sources */,
+				E2FCAE1229AB585F0020CC2A /* WonderLand.xcdatamodeld in Sources */,
+				E2FCAE0829AB585F0020CC2A /* ContentView.swift in Sources */,
+				E2FCAE0629AB585F0020CC2A /* WonderLandApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2FCAE1329AB585F0020CC2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2FCAE1C29AB585F0020CC2A /* WonderLandTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2FCAE1D29AB585F0020CC2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2FCAE2829AB585F0020CC2A /* WonderLandUITestsLaunchTests.swift in Sources */,
+				E2FCAE2629AB585F0020CC2A /* WonderLandUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E2FCAE1929AB585F0020CC2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2FCAE0129AB585F0020CC2A /* WonderLand */;
+			targetProxy = E2FCAE1829AB585F0020CC2A /* PBXContainerItemProxy */;
+		};
+		E2FCAE2329AB585F0020CC2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2FCAE0129AB585F0020CC2A /* WonderLand */;
+			targetProxy = E2FCAE2229AB585F0020CC2A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E2FCAE2929AB585F0020CC2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E2FCAE2A29AB585F0020CC2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E2FCAE2C29AB585F0020CC2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WonderLand/Preview Content\"";
+				DEVELOPMENT_TEAM = T246BR6UVB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zziro.WonderLand;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E2FCAE2D29AB585F0020CC2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WonderLand/Preview Content\"";
+				DEVELOPMENT_TEAM = T246BR6UVB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zziro.WonderLand;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E2FCAE2F29AB585F0020CC2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T246BR6UVB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zziro.WonderLandTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WonderLand.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WonderLand";
+			};
+			name = Debug;
+		};
+		E2FCAE3029AB585F0020CC2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T246BR6UVB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zziro.WonderLandTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WonderLand.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WonderLand";
+			};
+			name = Release;
+		};
+		E2FCAE3229AB585F0020CC2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T246BR6UVB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zziro.WonderLandUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WonderLand;
+			};
+			name = Debug;
+		};
+		E2FCAE3329AB585F0020CC2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T246BR6UVB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zziro.WonderLandUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WonderLand;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E2FCADFD29AB585F0020CC2A /* Build configuration list for PBXProject "WonderLand" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2FCAE2929AB585F0020CC2A /* Debug */,
+				E2FCAE2A29AB585F0020CC2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2FCAE2B29AB585F0020CC2A /* Build configuration list for PBXNativeTarget "WonderLand" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2FCAE2C29AB585F0020CC2A /* Debug */,
+				E2FCAE2D29AB585F0020CC2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2FCAE2E29AB585F0020CC2A /* Build configuration list for PBXNativeTarget "WonderLandTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2FCAE2F29AB585F0020CC2A /* Debug */,
+				E2FCAE3029AB585F0020CC2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2FCAE3129AB585F0020CC2A /* Build configuration list for PBXNativeTarget "WonderLandUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2FCAE3229AB585F0020CC2A /* Debug */,
+				E2FCAE3329AB585F0020CC2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E2FCAE1029AB585F0020CC2A /* WonderLand.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E2FCAE1129AB585F0020CC2A /* WonderLand.xcdatamodel */,
+			);
+			currentVersion = E2FCAE1129AB585F0020CC2A /* WonderLand.xcdatamodel */;
+			path = WonderLand.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E2FCADFA29AB585F0020CC2A /* Project object */;
+}
