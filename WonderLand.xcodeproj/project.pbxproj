@@ -16,6 +16,9 @@
 		E2FCAE1C29AB585F0020CC2A /* WonderLandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAE1B29AB585F0020CC2A /* WonderLandTests.swift */; };
 		E2FCAE2629AB585F0020CC2A /* WonderLandUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAE2529AB585F0020CC2A /* WonderLandUITests.swift */; };
 		E2FCAE2829AB585F0020CC2A /* WonderLandUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAE2729AB585F0020CC2A /* WonderLandUITestsLaunchTests.swift */; };
+		E2FCAE3929AB5B0E0020CC2A /* SUIT-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E2FCAE3629AB5B0E0020CC2A /* SUIT-SemiBold.otf */; };
+		E2FCAE3A29AB5B0E0020CC2A /* SUIT-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E2FCAE3729AB5B0E0020CC2A /* SUIT-Regular.otf */; };
+		E2FCAE3B29AB5B0E0020CC2A /* SUIT-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E2FCAE3829AB5B0E0020CC2A /* SUIT-Bold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,10 @@
 		E2FCAE2129AB585F0020CC2A /* WonderLandUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WonderLandUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2FCAE2529AB585F0020CC2A /* WonderLandUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WonderLandUITests.swift; sourceTree = "<group>"; };
 		E2FCAE2729AB585F0020CC2A /* WonderLandUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WonderLandUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E2FCAE3629AB5B0E0020CC2A /* SUIT-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-SemiBold.otf"; sourceTree = "<group>"; };
+		E2FCAE3729AB5B0E0020CC2A /* SUIT-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-Regular.otf"; sourceTree = "<group>"; };
+		E2FCAE3829AB5B0E0020CC2A /* SUIT-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-Bold.otf"; sourceTree = "<group>"; };
+		E2FCAE3C29AB611A0020CC2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				E2FCAE0429AB585F0020CC2A /* WonderLand */,
+				E2FCAE3429AB5AD70020CC2A /* Shared */,
 				E2FCAE1A29AB585F0020CC2A /* WonderLandTests */,
 				E2FCAE2429AB585F0020CC2A /* WonderLandUITests */,
 				E2FCAE0329AB585F0020CC2A /* Products */,
@@ -98,6 +106,7 @@
 		E2FCAE0429AB585F0020CC2A /* WonderLand */ = {
 			isa = PBXGroup;
 			children = (
+				E2FCAE3C29AB611A0020CC2A /* Info.plist */,
 				E2FCAE0529AB585F0020CC2A /* WonderLandApp.swift */,
 				E2FCAE0729AB585F0020CC2A /* ContentView.swift */,
 				E2FCAE0929AB585F0020CC2A /* Assets.xcassets */,
@@ -131,6 +140,24 @@
 				E2FCAE2729AB585F0020CC2A /* WonderLandUITestsLaunchTests.swift */,
 			);
 			path = WonderLandUITests;
+			sourceTree = "<group>";
+		};
+		E2FCAE3429AB5AD70020CC2A /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				E2FCAE3529AB5AE10020CC2A /* Fonts */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		E2FCAE3529AB5AE10020CC2A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E2FCAE3829AB5B0E0020CC2A /* SUIT-Bold.otf */,
+				E2FCAE3729AB5B0E0020CC2A /* SUIT-Regular.otf */,
+				E2FCAE3629AB5B0E0020CC2A /* SUIT-SemiBold.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,8 +264,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2FCAE3929AB5B0E0020CC2A /* SUIT-SemiBold.otf in Resources */,
 				E2FCAE0D29AB585F0020CC2A /* Preview Assets.xcassets in Resources */,
+				E2FCAE3B29AB5B0E0020CC2A /* SUIT-Bold.otf in Resources */,
 				E2FCAE0A29AB585F0020CC2A /* Assets.xcassets in Resources */,
+				E2FCAE3A29AB5B0E0020CC2A /* SUIT-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +458,7 @@
 				DEVELOPMENT_TEAM = T246BR6UVB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WonderLand/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -457,6 +488,7 @@
 				DEVELOPMENT_TEAM = T246BR6UVB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WonderLand/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
