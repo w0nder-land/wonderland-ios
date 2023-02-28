@@ -29,7 +29,15 @@ struct ContentView: View {
 
             Text("Subtitle3 테스트해본다 폰트")
                 .font(.custom("SUIT-SemiBold", size: 14))
-        }
+
+            Text("Heading1 suit 폰트로 적용")
+                .font(.suit(.bold, size: 24))
+
+            Text("Heading2 suit 폰트로 적용")
+                .font(.suit(.bold, size: 20))
+
+            Text("Heading3 suit 폰트로 적용")
+                .font(.suit(.bold, size: 14))
     }
 }
 
