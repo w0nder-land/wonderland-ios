@@ -20,6 +20,7 @@
 		E2FCAE3A29AB5B0E0020CC2A /* SUIT-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E2FCAE3729AB5B0E0020CC2A /* SUIT-Regular.otf */; };
 		E2FCAE3B29AB5B0E0020CC2A /* SUIT-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E2FCAE3829AB5B0E0020CC2A /* SUIT-Bold.otf */; };
 		E2FCAE3F29AB636D0020CC2A /* SUIT.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAE3E29AB636D0020CC2A /* SUIT.swift */; };
+		E2FCAE4329ADF6800020CC2A /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAE4229ADF6800020CC2A /* Typography.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		E2FCAE3829AB5B0E0020CC2A /* SUIT-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-Bold.otf"; sourceTree = "<group>"; };
 		E2FCAE3C29AB611A0020CC2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E2FCAE3E29AB636D0020CC2A /* SUIT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUIT.swift; sourceTree = "<group>"; };
+		E2FCAE4229ADF6800020CC2A /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 		E2FCAE4129ADF5A00020CC2A /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				E2FCAE4229ADF6800020CC2A /* Typography.swift */,
 				E2FCAE3E29AB636D0020CC2A /* SUIT.swift */,
 			);
 			path = Font;
@@ -324,6 +327,7 @@
 				E2FCAE3F29AB636D0020CC2A /* SUIT.swift in Sources */,
 				E2FCAE1229AB585F0020CC2A /* WonderLand.xcdatamodeld in Sources */,
 				E2FCAE0829AB585F0020CC2A /* ContentView.swift in Sources */,
+				E2FCAE4329ADF6800020CC2A /* Typography.swift in Sources */,
 				E2FCAE0629AB585F0020CC2A /* WonderLandApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

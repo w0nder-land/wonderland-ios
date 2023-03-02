@@ -13,22 +13,22 @@ struct ContentView: View {
     var body: some View {
         VStack(spacing: 10) {
             Text("Heading1 테스트해본다 폰트")
-                .font(.custom("SUIT-Bold", size: 24))
+                .typography(.heading1)
 
             Text("Heading2 테스트해본다 폰트")
-                .font(.custom("SUIT-Bold", size: 20))
+                .typography(.heading2)
 
             Text("Heading3 테스트해본다 폰트")
-                .font(.custom("SUIT-Bold", size: 14))
+                .typography(.heading3)
 
             Text("Subtitle1 테스트해본다 폰트")
-                .font(.custom("SUIT-SemiBold", size: 18))
+                .typography(.subtitle1)
 
             Text("Subtitle2 테스트해본다 폰트")
-                .font(.custom("SUIT-SemiBold", size: 16))
+                .typography(.subtitle2)
 
             Text("Subtitle3 테스트해본다 폰트")
-                .font(.custom("SUIT-SemiBold", size: 14))
+                .typography(.subtitle3)
 
             Text("Heading1 suit 폰트로 적용")
                 .font(.suit(.bold, size: 24))
@@ -38,6 +38,7 @@ struct ContentView: View {
 
             Text("Heading3 suit 폰트로 적용")
                 .font(.suit(.bold, size: 14))
+        }
     }
 }
 
