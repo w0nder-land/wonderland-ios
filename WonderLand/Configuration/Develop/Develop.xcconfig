@@ -1,0 +1,11 @@
+//
+//  Develop.xcconfig
+//  WonderLand
+//
+//  Created by Jinho Choi on 2023/03/03.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+KAKAO_NATIVE_APP_KEY = ec68ddde555f3a639ed4c2777800bd16

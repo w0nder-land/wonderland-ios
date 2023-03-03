@@ -67,6 +67,7 @@
 		E2FCAE3C29AB611A0020CC2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E2FCAE3E29AB636D0020CC2A /* SUIT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUIT.swift; sourceTree = "<group>"; };
 		E2FCAE4229ADF6800020CC2A /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
+		E2FCAE5829B190110020CC2A /* Develop.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Develop.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +127,7 @@
 		E2FCAE0429AB585F0020CC2A /* WonderLand */ = {
 			isa = PBXGroup;
 			children = (
+				E2FCAE5529B18FD80020CC2A /* Configuration */,
 				E2FCAE4029ADF4F10020CC2A /* UIs */,
 				E2FCAE3C29AB611A0020CC2A /* Info.plist */,
 				E2FCAE0529AB585F0020CC2A /* WonderLandApp.swift */,
@@ -204,6 +206,31 @@
 				E2FCAE3E29AB636D0020CC2A /* SUIT.swift */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		E2FCAE5529B18FD80020CC2A /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				E2FCAE5629B18FE70020CC2A /* Develop */,
+				E2FCAE5729B18FF10020CC2A /* Production */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		E2FCAE5629B18FE70020CC2A /* Develop */ = {
+			isa = PBXGroup;
+			children = (
+				E2FCAE5829B190110020CC2A /* Develop.xcconfig */,
+			);
+			path = Develop;
+			sourceTree = "<group>";
+		};
+		E2FCAE5729B18FF10020CC2A /* Production */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Production;
+			path = Develop;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
