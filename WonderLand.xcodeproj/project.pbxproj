@@ -431,6 +431,7 @@
 /* Begin XCBuildConfiguration section */
 		E2FCAE2929AB585F0020CC2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2FCAE5829B190110020CC2A /* Develop.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -545,6 +546,7 @@
 		};
 		E2FCAE2C29AB585F0020CC2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2FCAE5829B190110020CC2A /* Develop.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
