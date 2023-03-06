@@ -21,6 +21,14 @@ struct ContentView: View {
             Text("Heading3 테스트해본다 폰트")
                 .typography(.heading3)
 
+            Button {
+                debugPrint("test")
+            } label: {
+                Text("카카오 로그인")
+                    .typography(.heading3)
+            }
+
+
             Text("Subtitle1 테스트해본다 폰트")
                 .typography(.subtitle1)
 
