@@ -40,6 +40,8 @@ extension Typography {
     static var subtitle3: Typography {
         .init(suit: .semiBold, size: 14)
     }
+
+    // TODO: 폰트 케이스 추가
 }
 
 extension View {
