@@ -11,8 +11,6 @@ import Combine
 import KakaoSDKUser
 
 class KakaoLoginService: ObservableObject {
-//class KakaoLoginService {
-
 
     func handleKakaoLogin() {
         // 카카오톡 실행 가능 여부 확인
@@ -44,6 +42,17 @@ class KakaoLoginService: ObservableObject {
                     //do something
                     _ = oauthToken
                 }
+            }
+        }
+    }
+
+    func kakaoLogout() {
+        UserApi.shared.logout {(error) in
+            if let error = error {
+                print(error)
+            }
+            else {
+                print("logout() success.")
             }
         }
     }
