@@ -21,5 +21,15 @@
 		<string>SUIT-Regular.otf</string>
 		<string>SUIT-SemiBold.otf</string>
 	</array>
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>kakaokompassauth</string>
+        <string>kakaolink</string>
+    </array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<false/>
+	</dict>
 </dict>
 </plist>

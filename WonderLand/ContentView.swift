@@ -10,6 +10,8 @@ import CoreData
 
 struct ContentView: View {
 
+    @StateObject var kakaoService: KakaoLoginService = .init()
+
     var body: some View {
         VStack(spacing: 10) {
             Text("Heading1 테스트해본다 폰트")
@@ -22,7 +24,7 @@ struct ContentView: View {
                 .typography(.heading3)
 
             Button {
-                debugPrint("test")
+                kakaoService.handleKakaoLogin()
             } label: {
                 Text("카카오 로그인")
                     .typography(.heading3)

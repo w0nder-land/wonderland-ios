@@ -31,6 +31,7 @@
 		E2FCAE5429B188B70020CC2A /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = E2FCAE5329B188B70020CC2A /* KakaoSDKUser */; };
 		E2FCAE9529B635080020CC2A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAE9429B635080020CC2A /* SceneDelegate.swift */; };
 		E2FCAE9729B6359A0020CC2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAE9629B6359A0020CC2A /* AppDelegate.swift */; };
+		E2FCAE9B29B6F5370020CC2A /* KakaoLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAE9A29B6F5370020CC2A /* KakaoLoginService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		E2FCAE5829B190110020CC2A /* Develop.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Develop.xcconfig; sourceTree = "<group>"; };
 		E2FCAE9429B635080020CC2A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E2FCAE9629B6359A0020CC2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E2FCAE9A29B6F5370020CC2A /* KakaoLoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				E2FCAE5529B18FD80020CC2A /* Configuration */,
+				E2FCAE9829B6F3F10020CC2A /* Services */,
 				E2FCAE4029ADF4F10020CC2A /* UIs */,
 				E2FCAE3C29AB611A0020CC2A /* Info.plist */,
 				E2FCAE0529AB585F0020CC2A /* WonderLandApp.swift */,
@@ -237,6 +240,22 @@
 			);
 			name = Production;
 			path = Develop;
+			sourceTree = "<group>";
+		};
+		E2FCAE9829B6F3F10020CC2A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E2FCAE9929B6F3FD0020CC2A /* Auth */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E2FCAE9929B6F3FD0020CC2A /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				E2FCAE9A29B6F5370020CC2A /* KakaoLoginService.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -392,6 +411,7 @@
 				E2FCAE1229AB585F0020CC2A /* WonderLand.xcdatamodeld in Sources */,
 				E2FCAE0829AB585F0020CC2A /* ContentView.swift in Sources */,
 				E2FCAE4329ADF6800020CC2A /* Typography.swift in Sources */,
+				E2FCAE9B29B6F5370020CC2A /* KakaoLoginService.swift in Sources */,
 				E2FCAE0629AB585F0020CC2A /* WonderLandApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
