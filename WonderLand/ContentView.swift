@@ -12,6 +12,8 @@ struct ContentView: View {
 
     @StateObject var kakaoService: KakaoLoginService = .init()
 
+    @State private var kakaoLoginStatusString: String = ""
+
     var body: some View {
         VStack(spacing: 10) {
             Text("Heading1 테스트해본다 폰트")
@@ -23,11 +25,14 @@ struct ContentView: View {
             Text("Heading3 테스트해본다 폰트")
                 .typography(.heading3)
 
+            Text(kakaoLoginStatusString)
+                .typography(.subtitle1)
+
             Button {
                 kakaoService.handleKakaoLogin()
             } label: {
                 Text("카카오 로그인")
-                    .typography(.heading3)
+                    .typography(.subtitle1)
             }
 
             Button {
@@ -45,6 +50,9 @@ struct ContentView: View {
 
             Text("Subtitle3 테스트해본다 폰트")
                 .typography(.subtitle3)
+        }
+        .onChange(of: kakaoService.isLoggedIn) { isLoggedIn in
+            kakaoLoginStatusString = isLoggedIn ? "카카오 로그인 상태" : "카카오 로그아웃 상태"
         }
     }
 }
