@@ -32,6 +32,8 @@
 		E2FCAE9529B635080020CC2A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAE9429B635080020CC2A /* SceneDelegate.swift */; };
 		E2FCAE9729B6359A0020CC2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAE9629B6359A0020CC2A /* AppDelegate.swift */; };
 		E2FCAE9B29B6F5370020CC2A /* KakaoLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAE9A29B6F5370020CC2A /* KakaoLoginService.swift */; };
+		E2FCAE9E29B761FD0020CC2A /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E2FCAE9D29B761FD0020CC2A /* CombineMoya */; };
+		E2FCAEA029B761FD0020CC2A /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = E2FCAE9F29B761FD0020CC2A /* Moya */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,11 +85,13 @@
 			files = (
 				E2FCAE4629B188B70020CC2A /* KakaoSDK in Frameworks */,
 				E2FCAE4C29B188B70020CC2A /* KakaoSDKShare in Frameworks */,
+				E2FCAE9E29B761FD0020CC2A /* CombineMoya in Frameworks */,
 				E2FCAE5229B188B70020CC2A /* KakaoSDKTemplate in Frameworks */,
 				E2FCAE4A29B188B70020CC2A /* KakaoSDKCommon in Frameworks */,
 				E2FCAE5429B188B70020CC2A /* KakaoSDKUser in Frameworks */,
 				E2FCAE5029B188B70020CC2A /* KakaoSDKTalk in Frameworks */,
 				E2FCAE4E29B188B70020CC2A /* KakaoSDKStory in Frameworks */,
+				E2FCAEA029B761FD0020CC2A /* Moya in Frameworks */,
 				E2FCAE4829B188B70020CC2A /* KakaoSDKAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +287,8 @@
 				E2FCAE4F29B188B70020CC2A /* KakaoSDKTalk */,
 				E2FCAE5129B188B70020CC2A /* KakaoSDKTemplate */,
 				E2FCAE5329B188B70020CC2A /* KakaoSDKUser */,
+				E2FCAE9D29B761FD0020CC2A /* CombineMoya */,
+				E2FCAE9F29B761FD0020CC2A /* Moya */,
 			);
 			productName = WonderLand;
 			productReference = E2FCAE0229AB585F0020CC2A /* WonderLand.app */;
@@ -358,6 +364,7 @@
 			mainGroup = E2FCADF929AB585F0020CC2A;
 			packageReferences = (
 				E2FCAE4429B188B70020CC2A /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
+				E2FCAE9C29B761FD0020CC2A /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = E2FCAE0329AB585F0020CC2A /* Products */;
 			projectDirPath = "";
@@ -757,6 +764,14 @@
 				kind = branch;
 			};
 		};
+		E2FCAE9C29B761FD0020CC2A /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -799,6 +814,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E2FCAE4429B188B70020CC2A /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
 			productName = KakaoSDKUser;
+		};
+		E2FCAE9D29B761FD0020CC2A /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E2FCAE9C29B761FD0020CC2A /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		E2FCAE9F29B761FD0020CC2A /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E2FCAE9C29B761FD0020CC2A /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
 		};
 /* End XCSwiftPackageProductDependency section */
 
