@@ -41,6 +41,7 @@
 		E2FCAF2329F6F9070020CC2A /* MyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAF2229F6F9070020CC2A /* MyScreen.swift */; };
 		E2FCAF2929F700DE0020CC2A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2FCAF2B29F700DE0020CC2A /* Localizable.strings */; };
 		E2FCAF2E29F7064D0020CC2A /* MainTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAF2D29F7064D0020CC2A /* MainTab.swift */; };
+		E2FCAF3129F709160020CC2A /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAF3029F709160020CC2A /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		E2FCAF2A29F700DE0020CC2A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E2FCAF2C29F701140020CC2A /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E2FCAF2D29F7064D0020CC2A /* MainTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTab.swift; sourceTree = "<group>"; };
+		E2FCAF3029F709160020CC2A /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				E2FCAE5529B18FD80020CC2A /* Configuration */,
 				E2FCAE9829B6F3F10020CC2A /* Services */,
 				E2FCAE4029ADF4F10020CC2A /* UIs */,
+				E2FCAF2F29F707EE0020CC2A /* Extensions */,
 				E2FCAE3C29AB611A0020CC2A /* Info.plist */,
 				E2FCAE0529AB585F0020CC2A /* WonderLandApp.swift */,
 				E2FCAE0729AB585F0020CC2A /* ContentView.swift */,
@@ -282,6 +285,14 @@
 				E2FCAE9A29B6F5370020CC2A /* KakaoLoginService.swift */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		E2FCAF2F29F707EE0020CC2A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E2FCAF3029F709160020CC2A /* String+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -435,6 +446,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2FCAF3129F709160020CC2A /* String+Extension.swift in Sources */,
 				E2FCAE9729B6359A0020CC2A /* AppDelegate.swift in Sources */,
 				E2FCAF2129F6F8F60020CC2A /* CalendarScreen.swift in Sources */,
 				E2FCAE0F29AB585F0020CC2A /* Persistence.swift in Sources */,
