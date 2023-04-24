@@ -41,7 +41,23 @@ extension Typography {
         .init(suit: .semiBold, size: 14)
     }
 
-    // TODO: 폰트 케이스 추가
+    static var body1: Typography {
+        .init(suit: .regular, size: 16)
+    }
+
+    static var body2: Typography {
+        .init(suit: .regular, size: 14)
+    }
+
+    static var caption1: Typography {
+        .init(suit: .bold, size: 12)
+    }
+
+    static var caption2: Typography {
+        .init(suit: .regular, size: 12)
+    }
+
+    // TODO: LineHeight
 }
 
 extension View {
