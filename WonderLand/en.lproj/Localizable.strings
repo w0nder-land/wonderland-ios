@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  WonderLand
+
+  Created by Jinho Choi on 2023/04/25.
+  
+*/
+
+// MARK: MainTab
+
+"mainTabHome" = "home";
+"mainTabSearch" = "Search";
+"mainTabCalendar" = "Calendar";
+"mainTabMy" = "My";
