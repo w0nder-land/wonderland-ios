@@ -34,6 +34,12 @@
 		E2FCAE9B29B6F5370020CC2A /* KakaoLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAE9A29B6F5370020CC2A /* KakaoLoginService.swift */; };
 		E2FCAE9E29B761FD0020CC2A /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E2FCAE9D29B761FD0020CC2A /* CombineMoya */; };
 		E2FCAEA029B761FD0020CC2A /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = E2FCAE9F29B761FD0020CC2A /* Moya */; };
+		E2FCAF1B29F6F6760020CC2A /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAF1A29F6F6760020CC2A /* MainTabView.swift */; };
+		E2FCAF1D29F6F8A60020CC2A /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAF1C29F6F8A60020CC2A /* HomeScreen.swift */; };
+		E2FCAF1F29F6F8B40020CC2A /* SearchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAF1E29F6F8B40020CC2A /* SearchScreen.swift */; };
+		E2FCAF2129F6F8F60020CC2A /* CalendarScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAF2029F6F8F60020CC2A /* CalendarScreen.swift */; };
+		E2FCAF2329F6F9070020CC2A /* MyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAF2229F6F9070020CC2A /* MyScreen.swift */; };
+		E2FCAF2E29F7064D0020CC2A /* MainTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAF2D29F7064D0020CC2A /* MainTab.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +82,12 @@
 		E2FCAE9429B635080020CC2A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E2FCAE9629B6359A0020CC2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2FCAE9A29B6F5370020CC2A /* KakaoLoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginService.swift; sourceTree = "<group>"; };
+		E2FCAF1A29F6F6760020CC2A /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		E2FCAF1C29F6F8A60020CC2A /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		E2FCAF1E29F6F8B40020CC2A /* SearchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreen.swift; sourceTree = "<group>"; };
+		E2FCAF2029F6F8F60020CC2A /* CalendarScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarScreen.swift; sourceTree = "<group>"; };
+		E2FCAF2229F6F9070020CC2A /* MyScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScreen.swift; sourceTree = "<group>"; };
+		E2FCAF2D29F7064D0020CC2A /* MainTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +155,12 @@
 				E2FCAE3C29AB611A0020CC2A /* Info.plist */,
 				E2FCAE0529AB585F0020CC2A /* WonderLandApp.swift */,
 				E2FCAE0729AB585F0020CC2A /* ContentView.swift */,
+				E2FCAF1C29F6F8A60020CC2A /* HomeScreen.swift */,
+				E2FCAF1E29F6F8B40020CC2A /* SearchScreen.swift */,
+				E2FCAF2029F6F8F60020CC2A /* CalendarScreen.swift */,
+				E2FCAF2229F6F9070020CC2A /* MyScreen.swift */,
+				E2FCAF1A29F6F6760020CC2A /* MainTabView.swift */,
+				E2FCAF2D29F7064D0020CC2A /* MainTab.swift */,
 				E2FCAE9429B635080020CC2A /* SceneDelegate.swift */,
 				E2FCAE9629B6359A0020CC2A /* AppDelegate.swift */,
 				E2FCAE0929AB585F0020CC2A /* Assets.xcassets */,
@@ -412,14 +430,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2FCAE9729B6359A0020CC2A /* AppDelegate.swift in Sources */,
+				E2FCAF2129F6F8F60020CC2A /* CalendarScreen.swift in Sources */,
 				E2FCAE0F29AB585F0020CC2A /* Persistence.swift in Sources */,
 				E2FCAE9529B635080020CC2A /* SceneDelegate.swift in Sources */,
+				E2FCAF2E29F7064D0020CC2A /* MainTab.swift in Sources */,
 				E2FCAE3F29AB636D0020CC2A /* SUIT.swift in Sources */,
+				E2FCAF1D29F6F8A60020CC2A /* HomeScreen.swift in Sources */,
 				E2FCAE1229AB585F0020CC2A /* WonderLand.xcdatamodeld in Sources */,
 				E2FCAE0829AB585F0020CC2A /* ContentView.swift in Sources */,
 				E2FCAE4329ADF6800020CC2A /* Typography.swift in Sources */,
+				E2FCAF2329F6F9070020CC2A /* MyScreen.swift in Sources */,
 				E2FCAE9B29B6F5370020CC2A /* KakaoLoginService.swift in Sources */,
 				E2FCAE0629AB585F0020CC2A /* WonderLandApp.swift in Sources */,
+				E2FCAF1B29F6F6760020CC2A /* MainTabView.swift in Sources */,
+				E2FCAF1F29F6F8B40020CC2A /* SearchScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
