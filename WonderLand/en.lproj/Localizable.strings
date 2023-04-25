@@ -12,3 +12,7 @@
 "mainTabSearch" = "Search";
 "mainTabCalendar" = "Calendar";
 "mainTabMy" = "My";
+
+// MARK: Search
+
+"searchFestivals" = "Search Festivals";

@@ -12,3 +12,7 @@
 "mainTabSearch" = "검색";
 "mainTabCalendar" = "캘린더";
 "mainTabMy" = "마이";
+
+// MARK: Search
+
+"searchFestivals" = "어떤 축제를 찾고 계신가요?";

@@ -42,6 +42,8 @@
 		E2FCAF2929F700DE0020CC2A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2FCAF2B29F700DE0020CC2A /* Localizable.strings */; };
 		E2FCAF2E29F7064D0020CC2A /* MainTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAF2D29F7064D0020CC2A /* MainTab.swift */; };
 		E2FCAF3129F709160020CC2A /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAF3029F709160020CC2A /* String+Extension.swift */; };
+		E2FCAF3529F7ED9C0020CC2A /* SearchTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAF3429F7ED9C0020CC2A /* SearchTextFieldModifier.swift */; };
+		E2FCAF3729F7F1740020CC2A /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAF3629F7F1740020CC2A /* SearchTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +95,8 @@
 		E2FCAF2C29F701140020CC2A /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E2FCAF2D29F7064D0020CC2A /* MainTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTab.swift; sourceTree = "<group>"; };
 		E2FCAF3029F709160020CC2A /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		E2FCAF3429F7ED9C0020CC2A /* SearchTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextFieldModifier.swift; sourceTree = "<group>"; };
+		E2FCAF3629F7F1740020CC2A /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +236,7 @@
 		E2FCAE4029ADF4F10020CC2A /* UIs */ = {
 			isa = PBXGroup;
 			children = (
+				E2FCAF3229F7ED6C0020CC2A /* Components */,
 				E2FCAE3D29AB62C20020CC2A /* Styles */,
 			);
 			path = UIs;
@@ -293,6 +298,23 @@
 				E2FCAF3029F709160020CC2A /* String+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E2FCAF3229F7ED6C0020CC2A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E2FCAF3329F7ED780020CC2A /* TextFields */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E2FCAF3329F7ED780020CC2A /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				E2FCAF3629F7F1740020CC2A /* SearchTextField.swift */,
+				E2FCAF3429F7ED9C0020CC2A /* SearchTextFieldModifier.swift */,
+			);
+			path = TextFields;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -460,8 +482,10 @@
 				E2FCAF2329F6F9070020CC2A /* MyScreen.swift in Sources */,
 				E2FCAE9B29B6F5370020CC2A /* KakaoLoginService.swift in Sources */,
 				E2FCAE0629AB585F0020CC2A /* WonderLandApp.swift in Sources */,
+				E2FCAF3529F7ED9C0020CC2A /* SearchTextFieldModifier.swift in Sources */,
 				E2FCAF1B29F6F6760020CC2A /* MainTabView.swift in Sources */,
 				E2FCAF1F29F6F8B40020CC2A /* SearchScreen.swift in Sources */,
+				E2FCAF3729F7F1740020CC2A /* SearchTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
