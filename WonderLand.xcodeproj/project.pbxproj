@@ -44,6 +44,7 @@
 		E2FCAF3129F709160020CC2A /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAF3029F709160020CC2A /* String+Extension.swift */; };
 		E2FCAF3529F7ED9C0020CC2A /* SearchTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAF3429F7ED9C0020CC2A /* SearchTextFieldModifier.swift */; };
 		E2FCAF3729F7F1740020CC2A /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAF3629F7F1740020CC2A /* SearchTextField.swift */; };
+		E2FCAF3C29FCF6010020CC2A /* FestivalDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAF3B29FCF6010020CC2A /* FestivalDetailScreen.swift */; };
 		E2FCAF3F29FD007D0020CC2A /* HDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAF3E29FD007D0020CC2A /* HDivider.swift */; };
 		E2FCAF4129FD009A0020CC2A /* VDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAF4029FD009A0020CC2A /* VDivider.swift */; };
 /* End PBXBuildFile section */
@@ -99,6 +100,7 @@
 		E2FCAF3029F709160020CC2A /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		E2FCAF3429F7ED9C0020CC2A /* SearchTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextFieldModifier.swift; sourceTree = "<group>"; };
 		E2FCAF3629F7F1740020CC2A /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
+		E2FCAF3B29FCF6010020CC2A /* FestivalDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalDetailScreen.swift; sourceTree = "<group>"; };
 		E2FCAF3E29FD007D0020CC2A /* HDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDivider.swift; sourceTree = "<group>"; };
 		E2FCAF4029FD009A0020CC2A /* VDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VDivider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -173,6 +175,7 @@
 				E2FCAF1E29F6F8B40020CC2A /* SearchScreen.swift */,
 				E2FCAF2029F6F8F60020CC2A /* CalendarScreen.swift */,
 				E2FCAF2229F6F9070020CC2A /* MyScreen.swift */,
+				E2FCAF3B29FCF6010020CC2A /* FestivalDetailScreen.swift */,
 				E2FCAF1A29F6F6760020CC2A /* MainTabView.swift */,
 				E2FCAF2D29F7064D0020CC2A /* MainTab.swift */,
 				E2FCAF2B29F700DE0020CC2A /* Localizable.strings */,
@@ -494,6 +497,7 @@
 				E2FCAE1229AB585F0020CC2A /* WonderLand.xcdatamodeld in Sources */,
 				E2FCAE0829AB585F0020CC2A /* ContentView.swift in Sources */,
 				E2FCAE4329ADF6800020CC2A /* Typography.swift in Sources */,
+				E2FCAF3C29FCF6010020CC2A /* FestivalDetailScreen.swift in Sources */,
 				E2FCAF2329F6F9070020CC2A /* MyScreen.swift in Sources */,
 				E2FCAE9B29B6F5370020CC2A /* KakaoLoginService.swift in Sources */,
 				E2FCAF4129FD009A0020CC2A /* VDivider.swift in Sources */,

@@ -16,3 +16,8 @@
 // MARK: Search
 
 "searchFestivals" = "Search Festivals";
+
+// MARK: Festival Detail
+
+"artists" = "Artists";
+"recommendedFestival" = "Recommended Festival";
