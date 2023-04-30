@@ -47,6 +47,8 @@
 		E2FCAF3C29FCF6010020CC2A /* FestivalDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAF3B29FCF6010020CC2A /* FestivalDetailScreen.swift */; };
 		E2FCAF3F29FD007D0020CC2A /* HDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAF3E29FD007D0020CC2A /* HDivider.swift */; };
 		E2FCAF4129FD009A0020CC2A /* VDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAF4029FD009A0020CC2A /* VDivider.swift */; };
+		E2FCAF4429FE5F020020CC2A /* HFestivalListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAF4329FE5F020020CC2A /* HFestivalListItemView.swift */; };
+		E2FCAF4629FE64930020CC2A /* VFestivalListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAF4529FE64930020CC2A /* VFestivalListItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +105,8 @@
 		E2FCAF3B29FCF6010020CC2A /* FestivalDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalDetailScreen.swift; sourceTree = "<group>"; };
 		E2FCAF3E29FD007D0020CC2A /* HDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDivider.swift; sourceTree = "<group>"; };
 		E2FCAF4029FD009A0020CC2A /* VDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VDivider.swift; sourceTree = "<group>"; };
+		E2FCAF4329FE5F020020CC2A /* HFestivalListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HFestivalListItemView.swift; sourceTree = "<group>"; };
+		E2FCAF4529FE64930020CC2A /* VFestivalListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VFestivalListItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +180,8 @@
 				E2FCAF2029F6F8F60020CC2A /* CalendarScreen.swift */,
 				E2FCAF2229F6F9070020CC2A /* MyScreen.swift */,
 				E2FCAF3B29FCF6010020CC2A /* FestivalDetailScreen.swift */,
+				E2FCAF4329FE5F020020CC2A /* HFestivalListItemView.swift */,
+				E2FCAF4529FE64930020CC2A /* VFestivalListItemView.swift */,
 				E2FCAF1A29F6F6760020CC2A /* MainTabView.swift */,
 				E2FCAF2D29F7064D0020CC2A /* MainTab.swift */,
 				E2FCAF2B29F700DE0020CC2A /* Localizable.strings */,
@@ -487,6 +493,7 @@
 			files = (
 				E2FCAF3129F709160020CC2A /* String+Extension.swift in Sources */,
 				E2FCAE9729B6359A0020CC2A /* AppDelegate.swift in Sources */,
+				E2FCAF4429FE5F020020CC2A /* HFestivalListItemView.swift in Sources */,
 				E2FCAF2129F6F8F60020CC2A /* CalendarScreen.swift in Sources */,
 				E2FCAE0F29AB585F0020CC2A /* Persistence.swift in Sources */,
 				E2FCAF3F29FD007D0020CC2A /* HDivider.swift in Sources */,
@@ -505,6 +512,7 @@
 				E2FCAF3529F7ED9C0020CC2A /* SearchTextFieldModifier.swift in Sources */,
 				E2FCAF1B29F6F6760020CC2A /* MainTabView.swift in Sources */,
 				E2FCAF1F29F6F8B40020CC2A /* SearchScreen.swift in Sources */,
+				E2FCAF4629FE64930020CC2A /* VFestivalListItemView.swift in Sources */,
 				E2FCAF3729F7F1740020CC2A /* SearchTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

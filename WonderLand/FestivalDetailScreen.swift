@@ -265,7 +265,7 @@ struct RecommendFestivalListView: View {
                                                                description: "2023"),
                                                          .init(posterImageURL: nil,
                                                                title: "서울재즈페스티벌",
-                                                               description: "2023"),
+                                                               description: "2011"),
                                                          .init(posterImageURL: nil,
                                                                title: "서울재즈페스티벌",
                                                                description: "2023"),
@@ -280,28 +280,10 @@ struct RecommendFestivalListView: View {
                 .foregroundColor(.white)
                 .padding(.horizontal, 20)
 
-            // TODO: FestivalListItemView .VerticalStyle
             ScrollView(.horizontal) {
                 HStack(spacing: 24) {
                     ForEach(festivalItems) { festival in
-                        VStack(alignment: .leading, spacing: 10) {
-                            AsyncImage(url: festival.posterImageURL, content: { _ in
-                                Color.red
-                            }, placeholder: {
-                                Color.blue
-                            })
-                            .frame(width: 120, height: 160)
-
-                            VStack(alignment: .leading, spacing: 0) {
-                                Text(festival.title)
-                                    .typography(.subtitle3)
-                                    .foregroundColor(.gray)
-
-                                Text(festival.description)
-                                    .typography(.subtitle3)
-                                    .foregroundColor(.gray)
-                            }
-                        }
+                        HFestivalListItemView(festival: festival)
                     }
                 }
                 .padding(.horizontal, 20)
@@ -312,8 +294,21 @@ struct RecommendFestivalListView: View {
 
 struct MockFestivalViewModel: Identifiable {
 
-    let id: UUID = UUID()
+    let id: UUID
     let posterImageURL: URL?
     let title: String
     let description: String
+    let isEnded: Bool?
+
+    init(id: UUID = UUID(),
+         posterImageURL: URL?,
+         title: String,
+         description: String,
+         isEnded: Bool? = nil) {
+        self.id = id
+        self.posterImageURL = posterImageURL
+        self.title = title
+        self.description = description
+        self.isEnded = isEnded
+    }
 }
