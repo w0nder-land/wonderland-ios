@@ -10,27 +10,31 @@ import SwiftUI
 struct FestivalDetailScreen: View {
 
     var body: some View {
-        ScrollView(showsIndicators: false) {
-            VStack(spacing: 0) {
-                posterImage
+        VStack(spacing: 0) {
+            ScrollView(showsIndicators: false) {
+                VStack(spacing: 0) {
+                    posterImage
 
-                VStack(spacing: 48) {
-                    title
-                        .padding(.horizontal, 20)
+                    VStack(spacing: 48) {
+                        title
+                            .padding(.horizontal, 20)
 
-                    defaultInformation
-                        .padding(.horizontal, 20)
+                        defaultInformation
+                            .padding(.horizontal, 20)
 
-                    ArtistListView()
+                        ArtistListView()
 
-                    FestivalDetailInformationView()
+                        FestivalDetailInformationView()
 
-                    RecommendFestivalListView()
+                        RecommendFestivalListView()
+                    }
+                    .padding(.bottom, 85)
+
+                    Spacer()
                 }
-                .padding(.bottom, 85)
-
-                Spacer()
             }
+
+            MainBottomButton()
         }
         .background(Color.black)
     }
@@ -334,6 +338,45 @@ struct FestivalDetailInformationView: View {
         }
     }
 }
+
+// TODO: 네이밍 수정
+private struct MainBottomButton: View {
+
+    var body: some View {
+        HStack(spacing: 0) {
+            VStack(spacing: 0) {
+                Image(systemName: "heart")
+                    .resizable()
+                    .renderingMode(.template)
+                    .foregroundColor(.white)
+                    .frame(width: 24, height: 24)
+
+                Text("12")
+                    .typography(.caption1)
+                    .foregroundColor(.white)
+            }
+            .padding(.horizontal, 7)
+            .padding(.top, 3)
+            .padding(.bottom, 1)
+
+            Text("예매하기")
+                .typography(.subtitle2)
+                .foregroundColor(.black)
+                .frame(width: 335, height: 48)
+                .background {
+                    RoundedRectangle(cornerRadius: 6, style: .continuous)
+                        .fill(Color.white)
+
+                }
+
+        }
+        .padding(.horizontal, 20)
+        .padding(.top, 14)
+        .padding(.bottom, 8)
+        .background(Color.gray)
+    }
+}
+
 struct MockFestivalViewModel: Identifiable {
 
     let id: UUID
