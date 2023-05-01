@@ -11,20 +11,23 @@ struct FestivalDetailScreen: View {
 
     var body: some View {
         ScrollView(showsIndicators: false) {
-            VStack {
+            VStack(spacing: 0) {
                 posterImage
 
-                title
-                    .padding(.horizontal, 20)
+                VStack(spacing: 48) {
+                    title
+                        .padding(.horizontal, 20)
 
-                defaultInformation
-                    .padding(.horizontal, 20)
+                    defaultInformation
+                        .padding(.horizontal, 20)
 
-                ArtistListView()
+                    ArtistListView()
 
-                RecommendFestivalListView()
-                    .padding(.top, 48)
-                    .padding(.bottom, 85)
+                    FestivalDetailInformationView()
+
+                    RecommendFestivalListView()
+                }
+                .padding(.bottom, 85)
 
                 Spacer()
             }
@@ -122,7 +125,6 @@ struct FestivalDetailScreen: View {
                 TicketView()
             }
         }
-        .padding(.vertical, 48)
         .frame(maxWidth: .infinity, alignment: .leading)
     }
 }
@@ -292,6 +294,46 @@ struct RecommendFestivalListView: View {
     }
 }
 
+struct FestivalDetailInformationView: View {
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            Text("moreInformation")
+                .typography(.heading2)
+                .foregroundColor(.white)
+                .padding(.horizontal, 20)
+
+            VStack(spacing: 0) {
+                ZStack(alignment: .bottom) {
+                    Image("FestivalInfoDummyImage")
+                        .resizable()
+                        .frame(height: 808)
+
+                    ZStack(alignment: .bottom) {
+                        LinearGradient(gradient: Gradient(colors: [Color.orange, Color.purple.opacity(0)]),
+                                       startPoint: .top,
+                                       endPoint: .bottom)
+
+                        Image(systemName: "arrow.down")
+                            .resizable()
+                            .renderingMode(.template)
+                            .foregroundColor(.white)
+                            .frame(width: 24, height: 24)
+                            .padding(.vertical, 12)
+                            .frame(maxWidth: .infinity)
+                            .background(Color.blue)
+
+                            .padding(.horizontal, 20)
+                            .padding(.bottom, 8)
+                    }
+                    .frame(height: 155)
+                }
+
+                HDivider(height: 8, color: .gray)
+            }
+        }
+    }
+}
 struct MockFestivalViewModel: Identifiable {
 
     let id: UUID

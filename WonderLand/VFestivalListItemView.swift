@@ -32,6 +32,7 @@ struct VFestivalListItemView: View {
                         .background(Color.blue)
                         .cornerRadius(4)
                 }
+
                 Text(festival.title)
                     .typography(.subtitle1)
                     .foregroundColor(.white)
