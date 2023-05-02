@@ -25,11 +25,11 @@ struct HFestivalListItemView: View {
             VStack(alignment: .leading, spacing: 0) {
                 Text(festival.title)
                     .typography(.subtitle3)
-                    .foregroundColor(.gray)
+                    .foregroundColor(.gray200)
 
                 Text(festival.description)
                     .typography(.subtitle3)
-                    .foregroundColor(.gray)
+                    .foregroundColor(.gray200)
             }
         }
     }

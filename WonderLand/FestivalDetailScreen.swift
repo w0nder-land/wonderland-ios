@@ -51,11 +51,11 @@ struct FestivalDetailScreen: View {
         VStack(alignment: .leading, spacing: 8) {
             Text("Haus of Wonder")
                 .typography(.init(suit: .bold, size: 32))
-                .foregroundColor(.white)
+                .foregroundColor(.gray50)
 
             Text("국내외 최정상 뮤지션들이 참여하는 음악 페스티벌로 다양한 서비스를 선보이는 원더월이 개최하는 첫 음악 페스티벌이다.")
                 .typography(.body1)
-                .foregroundColor(.white)
+                .foregroundColor(.gray200)
         }
         .padding(.top, 32)
         .frame(maxWidth: .infinity, alignment: .leading)
@@ -65,64 +65,64 @@ struct FestivalDetailScreen: View {
         VStack(alignment: .leading, spacing: 8) {
             Text("기본 정보")
                 .typography(.heading2)
-                .foregroundColor(.white)
+                .foregroundColor(.gray100)
 
             VStack(alignment: .leading, spacing: 24) {
                 VStack(alignment: .leading, spacing: 4) {
                     HStack(spacing: 37) {
                         Text("기간")
                             .typography(.subtitle2)
-                            .foregroundColor(.white)
+                            .foregroundColor(.gray100)
                             .frame(width: 56, alignment: .leading)
 
                         Text("2022.08.06(토)~2022.08.07(일)")
                             .typography(.body1)
-                            .foregroundColor(.white)
+                            .foregroundColor(.gray200)
                     }
 
                     HStack(spacing: 37) {
                         Text("장소")
                             .typography(.subtitle2)
-                            .foregroundColor(.white)
+                            .foregroundColor(.gray100)
                             .frame(width: 56, alignment: .leading)
 
                         Text("일산 킨텍스 제2전시관 7,8홀")
                             .typography(.body1)
-                            .foregroundColor(.white)
+                            .foregroundColor(.gray200)
                     }
 
                     HStack(spacing: 37) {
                         Text("관람시간")
                             .typography(.subtitle2)
-                            .foregroundColor(.white)
+                            .foregroundColor(.gray100)
                             .frame(width: 56, alignment: .leading)
 
                         Text("600분(인터미션 245분)")
                             .typography(.body1)
-                            .foregroundColor(.white)
+                            .foregroundColor(.gray200)
                     }
 
                     HStack(spacing: 37) {
                         Text("관람연령")
                             .typography(.subtitle2)
-                            .foregroundColor(.white)
+                            .foregroundColor(.gray100)
                             .frame(width: 56, alignment: .leading)
 
                         Text("전체관람가)")
                             .typography(.body1)
-                            .foregroundColor(.white)
+                            .foregroundColor(.gray200)
                     }
 
                     // MARK: 여기만 예외처리
                     HStack(spacing: 37) {
                         Text("공식")
                             .typography(.subtitle2)
-                            .foregroundColor(.white)
+                            .foregroundColor(.gray100)
                             .frame(width: 56, alignment: .leading)
 
                         Text("홈페이지 ㅣ 인스타그램 ㅣ 유튜브")
                             .typography(.body1)
-                            .foregroundColor(.white)
+                            .foregroundColor(.gray200)
                     }
                 }
 
@@ -152,16 +152,16 @@ struct TicketView: View {
                     HStack(spacing: 6) {
                         Text("티켓 오픈")
                             .typography(.subtitle2)
-                            .foregroundColor(.white)
+                            .foregroundColor(.gray100)
 
                         Text("D-24")
                             .typography(.caption1)
-                            .foregroundColor(.pink)
+                            .foregroundColor(.primary500)
                             .padding(.vertical, 2)
                             .padding(.horizontal, 6)
                             .background(
                                 RoundedRectangle(cornerRadius: 30, style: .continuous)
-                                    .stroke(Color.pink)
+                                    .stroke(Color.primary500)
                             )
                     }
 
@@ -169,7 +169,7 @@ struct TicketView: View {
 
                     Text("2023.03.17(금) 20:00")
                         .typography(.body2)
-                        .foregroundColor(.white)
+                        .foregroundColor(.gray100)
                 }
                 .frame(height: 60)
                 .padding(.horizontal, 20)
@@ -178,7 +178,7 @@ struct TicketView: View {
                 HStack(spacing: 0) {
                     ForEach(tickets, id:\.self) { ticket in
                         if tickets.first != ticket {
-                            VDivider(color: .red)
+                            VDivider(color: .gray600)
                                 .frame(height: 13)
                                 .padding(.horizontal, 10)
                         }
@@ -186,7 +186,7 @@ struct TicketView: View {
                         HStack(spacing: 4) {
                             Text(ticket)
                                 .typography(.body2)
-                                .foregroundColor(.white)
+                                .foregroundColor(.gray200)
 
                             Image(systemName: "arrow.up.forward")
                                 .resizable()
@@ -203,7 +203,7 @@ struct TicketView: View {
                 .padding(.horizontal, 20)
         }
         .frame(width: 335, height: 120)
-        .background(Color.gray.clipShape(TicketShape()))
+        .background(Color.gray800.clipShape(TicketShape()))
         .cornerRadius(3)
     }
 }
@@ -241,7 +241,7 @@ struct ArtistListView: View {
         VStack(alignment: .leading, spacing: 16) {
             Text("artists")
                 .typography(.heading2)
-                .foregroundColor(.white)
+                .foregroundColor(.gray100)
                 .padding(.horizontal, 20)
 
             ScrollView(.horizontal) {
@@ -254,7 +254,7 @@ struct ArtistListView: View {
 
                             Text(artist)
                                 .typography(.body2)
-                                .foregroundColor(.gray)
+                                .foregroundColor(.gray200)
                         }
                     }
                 }
@@ -283,7 +283,7 @@ struct RecommendFestivalListView: View {
         VStack(alignment: .leading, spacing: 16) {
             Text("recommendedFestival")
                 .typography(.heading2)
-                .foregroundColor(.white)
+                .foregroundColor(.gray100)
                 .padding(.horizontal, 20)
 
             ScrollView(.horizontal) {
@@ -304,7 +304,7 @@ struct FestivalDetailInformationView: View {
         VStack(alignment: .leading, spacing: 0) {
             Text("moreInformation")
                 .typography(.heading2)
-                .foregroundColor(.white)
+                .foregroundColor(.gray100)
                 .padding(.horizontal, 20)
 
             VStack(spacing: 0) {
@@ -361,7 +361,7 @@ private struct MainBottomButton: View {
 
             Text("예매하기")
                 .typography(.subtitle2)
-                .foregroundColor(.black)
+                .foregroundColor(.gray900)
                 .frame(width: 335, height: 48)
                 .background {
                     RoundedRectangle(cornerRadius: 6, style: .continuous)
@@ -373,7 +373,7 @@ private struct MainBottomButton: View {
         .padding(.horizontal, 20)
         .padding(.top, 14)
         .padding(.bottom, 8)
-        .background(Color.gray)
+        .background(Color.gray900)
     }
 }
 
