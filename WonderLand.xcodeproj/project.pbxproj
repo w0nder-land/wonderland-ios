@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E24414C62A00AA4B002760E6 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24414C52A00AA4B002760E6 /* Color+Extension.swift */; };
 		E24414C82A00BEA9002760E6 /* UIColor+Extesion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24414C72A00BEA9002760E6 /* UIColor+Extesion.swift */; };
+		E24414CB2A0637EF002760E6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E24414CA2A0637EF002760E6 /* SnapKit */; };
 		E2FCAE0629AB585F0020CC2A /* WonderLandApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAE0529AB585F0020CC2A /* WonderLandApp.swift */; };
 		E2FCAE0829AB585F0020CC2A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAE0729AB585F0020CC2A /* ContentView.swift */; };
 		E2FCAE0A29AB585F0020CC2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2FCAE0929AB585F0020CC2A /* Assets.xcassets */; };
@@ -128,6 +129,7 @@
 				E2FCAE4E29B188B70020CC2A /* KakaoSDKStory in Frameworks */,
 				E2FCAEA029B761FD0020CC2A /* Moya in Frameworks */,
 				E2FCAE4829B188B70020CC2A /* KakaoSDKAuth in Frameworks */,
+				E24414CB2A0637EF002760E6 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +383,7 @@
 				E2FCAE5329B188B70020CC2A /* KakaoSDKUser */,
 				E2FCAE9D29B761FD0020CC2A /* CombineMoya */,
 				E2FCAE9F29B761FD0020CC2A /* Moya */,
+				E24414CA2A0637EF002760E6 /* SnapKit */,
 			);
 			productName = WonderLand;
 			productReference = E2FCAE0229AB585F0020CC2A /* WonderLand.app */;
@@ -458,6 +461,7 @@
 			packageReferences = (
 				E2FCAE4429B188B70020CC2A /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
 				E2FCAE9C29B761FD0020CC2A /* XCRemoteSwiftPackageReference "Moya" */,
+				E24414C92A0637EF002760E6 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = E2FCAE0329AB585F0020CC2A /* Products */;
 			projectDirPath = "";
@@ -878,6 +882,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		E24414C92A0637EF002760E6 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		E2FCAE4429B188B70020CC2A /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kakao/kakao-ios-sdk";
@@ -897,6 +909,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		E24414CA2A0637EF002760E6 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E24414C92A0637EF002760E6 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
 		E2FCAE4529B188B70020CC2A /* KakaoSDK */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E2FCAE4429B188B70020CC2A /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
