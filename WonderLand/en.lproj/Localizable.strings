@@ -6,9 +6,15 @@
   
 */
 
+// MARK: Onboarding
+
+"start" = "Start";
+"signUpWithKakao" = "Sign Up With Kakao";
+"takeATour" = "Take a tour";
+
 // MARK: MainTab
 
-"mainTabHome" = "home";
+"mainTabHome" = "Home";
 "mainTabSearch" = "Search";
 "mainTabCalendar" = "Calendar";
 "mainTabMy" = "My";

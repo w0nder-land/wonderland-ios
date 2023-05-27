@@ -15,8 +15,13 @@ struct ContentView: View {
     @State private var kakaoLoginStatusString: String = ""
 
     var body: some View {
-        VStack(spacing: 0) {
-            MainTabView()
+        ZStack {
+            VStack(spacing: 0) {
+                MainTabView()
+            }
+
+            OnboardingViewControllerWrapper(currentPage: .constant(0))
+                .ignoresSafeArea()
         }
     }
 }

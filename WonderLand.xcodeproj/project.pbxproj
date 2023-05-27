@@ -12,6 +12,7 @@
 		E24414CB2A0637EF002760E6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E24414CA2A0637EF002760E6 /* SnapKit */; };
 		E24414CD2A0639B0002760E6 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24414CC2A0639B0002760E6 /* UIImage+Extension.swift */; };
 		E24414CF2A063A3E002760E6 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24414CE2A063A3E002760E6 /* UIViewController+Extension.swift */; };
+		E24414D22A1B9B08002760E6 /* OnboardingViewControllerWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24414D12A1B9B08002760E6 /* OnboardingViewControllerWrapper.swift */; };
 		E2FCAE0629AB585F0020CC2A /* WonderLandApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAE0529AB585F0020CC2A /* WonderLandApp.swift */; };
 		E2FCAE0829AB585F0020CC2A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCAE0729AB585F0020CC2A /* ContentView.swift */; };
 		E2FCAE0A29AB585F0020CC2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2FCAE0929AB585F0020CC2A /* Assets.xcassets */; };
@@ -78,6 +79,7 @@
 		E24414C72A00BEA9002760E6 /* UIColor+Extesion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extesion.swift"; sourceTree = "<group>"; };
 		E24414CC2A0639B0002760E6 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		E24414CE2A063A3E002760E6 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		E24414D12A1B9B08002760E6 /* OnboardingViewControllerWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewControllerWrapper.swift; sourceTree = "<group>"; };
 		E2FCAE0229AB585F0020CC2A /* WonderLand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WonderLand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2FCAE0529AB585F0020CC2A /* WonderLandApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WonderLandApp.swift; sourceTree = "<group>"; };
 		E2FCAE0729AB585F0020CC2A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -163,6 +165,14 @@
 			path = Color;
 			sourceTree = "<group>";
 		};
+		E24414D02A1B9ADC002760E6 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				E24414D12A1B9B08002760E6 /* OnboardingViewControllerWrapper.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 		E2FCADF929AB585F0020CC2A = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +203,7 @@
 				E2FCAF2F29F707EE0020CC2A /* Extensions */,
 				E2FCAE3C29AB611A0020CC2A /* Info.plist */,
 				E2FCAE0529AB585F0020CC2A /* WonderLandApp.swift */,
+				E24414D02A1B9ADC002760E6 /* Onboarding */,
 				E2FCAE0729AB585F0020CC2A /* ContentView.swift */,
 				E2FCAF1C29F6F8A60020CC2A /* HomeScreen.swift */,
 				E2FCAF1E29F6F8B40020CC2A /* SearchScreen.swift */,
@@ -526,6 +537,7 @@
 				E2FCAE9529B635080020CC2A /* SceneDelegate.swift in Sources */,
 				E24414C62A00AA4B002760E6 /* Color+Extension.swift in Sources */,
 				E2FCAF2E29F7064D0020CC2A /* MainTab.swift in Sources */,
+				E24414D22A1B9B08002760E6 /* OnboardingViewControllerWrapper.swift in Sources */,
 				E2FCAE3F29AB636D0020CC2A /* SUIT.swift in Sources */,
 				E2FCAF1D29F6F8A60020CC2A /* HomeScreen.swift in Sources */,
 				E2FCAE1229AB585F0020CC2A /* WonderLand.xcdatamodeld in Sources */,

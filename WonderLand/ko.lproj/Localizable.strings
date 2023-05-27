@@ -6,6 +6,12 @@
   
 */
 
+// MARK: Onboarding
+
+"start" = "시작하기";
+"signUpWithKakao" = "카카오로 가입하기";
+"takeATour" = "간단히 둘러볼래요";
+
 // MARK: MainTab
 
 "mainTabHome" = "홈";
