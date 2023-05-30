@@ -13,6 +13,7 @@ import KakaoSDKUser
 class KakaoLoginService: ObservableObject {
 
     @Published var isLoggedIn: Bool = false
+    @Published var accessToken: String?
 
     // 카카오톡 설치 여부를 확인하여 앱, 웹뷰로 로그인 처리 메서드
     @MainActor
@@ -43,6 +44,7 @@ class KakaoLoginService: ObservableObject {
 
                     //do something
                     _ = oauthToken
+                    self.accessToken = oauthToken?.accessToken
                     continuation.resume(returning: true)
                 }
             }
@@ -63,6 +65,7 @@ class KakaoLoginService: ObservableObject {
 
                     //do something
                     _ = oauthToken
+                    self.accessToken = oauthToken?.accessToken
                     continuation.resume(returning: true)
                 }
             }

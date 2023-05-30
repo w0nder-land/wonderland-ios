@@ -9,16 +9,30 @@ import SwiftUI
 
 import SnapKit
 
+enum OnboardingAction {
+
+    case kakaoLogin
+
+    // 로그인 하지 않고 둘러보기
+    case takeATour
+}
+
 struct OnboardingViewControllerWrapper: UIViewControllerRepresentable {
 
     @Binding var currentPage: Int
+    let action: (OnboardingAction) -> Void
 
-    init(currentPage: Binding<Int>) {
+    init(currentPage: Binding<Int>,
+         action: @escaping (OnboardingAction) -> Void) {
         self._currentPage = currentPage
+        self.action = action
     }
 
     func makeUIViewController(context: Context) -> OnboardingViewController {
-        let onboardingViewController = OnboardingViewController(currentPage: $currentPage)
+        let onboardingViewController = OnboardingViewController(currentPage: $currentPage,
+                                                                action: { action in
+            self.action(action)
+        })
         return onboardingViewController
     }
 
@@ -28,7 +42,7 @@ struct OnboardingViewControllerWrapper: UIViewControllerRepresentable {
 struct OnboardingViewControllerWrapper_Previews: PreviewProvider {
 
     static var previews: some View {
-        OnboardingViewControllerWrapper(currentPage: .constant(1))
+        OnboardingViewControllerWrapper(currentPage: .constant(1), action: { _ in })
             .ignoresSafeArea()
     }
 }
@@ -36,6 +50,8 @@ struct OnboardingViewControllerWrapper_Previews: PreviewProvider {
 class OnboardingViewController: UIViewController {
 
     @Binding var currentPagePage: Int
+    let action: (OnboardingAction) -> Void
+
     private let scrollView: UIScrollView = .init()
     private let pageControl: UIPageControl = .init()
     private var onboardingImage01: UIImageView = UIImageView(image: .init(named: "OnboardingCard01"))
@@ -69,8 +85,10 @@ class OnboardingViewController: UIViewController {
 
     private var isSkip: Bool = false
 
-    init(currentPage: Binding<Int>) {
+    init(currentPage: Binding<Int>,
+         action: @escaping (OnboardingAction) -> Void) {
         self._currentPagePage = currentPage
+        self.action = action
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -199,8 +217,8 @@ class OnboardingViewController: UIViewController {
 
         signUpWithKakaoButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            // TODO: 상수 비율로 값주기
-            make.top.equalTo(onboardingImage04.snp.bottom).offset(104)
+            // TODO: 상수 비율로 값주기 (레이아웃 다시 잡아야됨)
+            make.top.equalTo(onboardingImage04.snp.bottom).offset(10)
             make.width.equalTo(326)
             make.height.equalTo(58)
         }
@@ -229,11 +247,11 @@ class OnboardingViewController: UIViewController {
     }
 
     @objc private func signUpWithKakao() {
-        // TODO: 카카오 로그인
+        action(.kakaoLogin)
     }
 
     @objc private func goHome() {
-        // TODO: 홈 화면보여주기
+        action(.takeATour)
     }
 }
 
@@ -241,7 +259,6 @@ extension OnboardingViewController: UIScrollViewDelegate {
 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
 
-        debugPrint("@@ scrollView.contentOffset.x: \(scrollView.contentOffset.x)")
         let offsetX = scrollView.contentOffset.x
         let scrollViewWidth = scrollView.frame.width
         let currentPageForIndicator: Int = Int(round(offsetX / scrollViewWidth))

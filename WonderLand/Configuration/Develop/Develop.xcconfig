@@ -8,4 +8,6 @@
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
-KAKAO_NATIVE_APP_KEY = 4706af75c82021e37cf258fd91e11eac
+API_BASE_URL = w0nderland.co.kr
+
+KAKAO_NATIVE_APP_KEY = fde8294d68365c30cf489c02ba5f88e3

@@ -20,8 +20,18 @@ struct ContentView: View {
                 MainTabView()
             }
 
-            OnboardingViewControllerWrapper(currentPage: .constant(0))
-                .ignoresSafeArea()
+            OnboardingViewControllerWrapper(currentPage: .constant(0), action: { action in
+                switch action {
+                case .kakaoLogin:
+                    // TODO: Task
+                    // kakaoService.handleKakaoLogin()
+                    return
+                case .takeATour:
+                    // TODO: AppStorage
+                    return
+                }
+            })
+                .ignoresSafeArea(.all, edges: .top)
         }
     }
 }
